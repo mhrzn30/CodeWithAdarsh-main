@@ -35,9 +35,7 @@ const AccountScreen = () => {
       <View style={styles.section}>
         <TouchableOpacity
           style={styles.listItem}
-          onPress={() =>
-            handleAlert("Help and Support feature is under development")
-          }
+          onPress={() => navigation.navigate("HelpAndSupportScreen")}
         >
           <Text style={styles.listText}>Help and Support</Text>
         </TouchableOpacity>

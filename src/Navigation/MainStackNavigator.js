@@ -14,6 +14,7 @@ import BookingHistory from "../HistoryScreen/BookingHistory";
 import AccountScreen from "../AccountScreen/AccountScreen";
 import ProfileScreen from "../AccountScreen/ProfileScreen/ProfileScreen";
 import PaymentsScreen from "../PaymentScreen/PaymentsScreen"; // Add this import
+import HelpAndSupportScreen from "../AccountScreen/HelpAndSupportScreen/HelpAndSupportScreen";
 
 const Stack = createStackNavigator();
 
@@ -64,6 +65,10 @@ const MainStackNavigator = () => {
       <Stack.Screen name="BookingHistory" component={BookingHistory} />
       <Stack.Screen name="Account" component={AccountScreen} />
       <Stack.Screen name="PaymentsScreen" component={PaymentsScreen} />
+      <Stack.Screen
+        name="HelpAndSupportScreen"
+        component={HelpAndSupportScreen}
+      />
     </Stack.Navigator>
   );
 };
